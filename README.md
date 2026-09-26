@@ -52,9 +52,6 @@ Notes:
 
 ```
 diwakar/
-├── .github/
-│   └── workflows/
-│       └── pages.yml     # auto-deploy to GitHub Pages
 ├── index.html            # single page, all sections
 ├── style.css             # design tokens → components → responsive
 ├── script.js             # ~300 lines of vanilla JS
@@ -78,7 +75,6 @@ diwakar/
 - Scroll progress bar
 - `prefers-reduced-motion` respected throughout
 - Keyboard accessible, skip link, visible focus rings
-- Auto-deploys to GitHub Pages on every push
 - Print stylesheet included
 
 ## Design system
@@ -95,13 +91,41 @@ Edit the tokens at the top of `style.css`:
 
 Type: `Instrument Serif` (display) · `Space Grotesk` (body) · `JetBrains Mono` (labels).
 
-## Deploy to GitHub Pages
+## Deploy
 
-Deploys automatically from `main` via `.github/workflows/pages.yml`
-(GitHub Actions → Pages source: **GitHub Actions**). Every push to `main`
-rebuilds and republishes.
+Publishing is intentionally **off** — nothing auto-deploys.
 
-Manual redeploy: **Actions → Deploy to GitHub Pages → Run workflow**.
+When you want the site live, pick one:
+
+**GitHub Pages (Actions)** — add a workflow like this, then push:
+
+```yaml
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+**GitHub Pages (branch)** — Settings → Pages → Source: *Deploy from a branch*,
+`main` / `/ (root)`.
 
 ## Licence
 
