@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diwakar — Frontend Developer</title>
+<meta name="description" content="Portfolio of Diwakar — frontend developer building fast, accessible interfaces with React, TypeScript and modern CSS.">
+<meta name="theme-color" content="#f2f0ea">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Diwakar — Frontend Developer">
+<meta property="og:description" content="I build fast, accessible interfaces for the web. React, TypeScript, modern CSS.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232b3cff'/><text x='50' y='72' font-family='Georgia,serif' font-size='64' font-style='italic' fill='%23fff' text-anchor='middle'>D</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     PLACEHOLDERS: search this file for "REPLACE" before publishing.
+     Contact details and sample projects are marked clearly.
+     ============================================================ -->
+
+<div class="grain" aria-hidden="true"></div>
+<div class="rail-lines" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<a class="skip" href="#about">Skip to content</a>
+
+<header class="head" id="top">
+  <div class="shell head-in">
+    <a class="mark" href="#top">Diwakar<span>.</span></a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#about" data-nav>About</a>
+      <a href="#stack" data-nav>Stack</a>
+      <a href="#work" data-nav>Work</a>
+      <a href="#path" data-nav>Path</a>
+    </nav>
+
+    <a class="btn btn-dark btn-sm magnet" href="#contact">Let's talk<span class="ar">&rarr;</span></a>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mmenu" id="mmenu">
+    <nav aria-label="Mobile">
+      <a href="#about"><em>01</em> About</a>
+      <a href="#stack"><em>02</em> Stack</a>
+      <a href="#work"><em>03</em> Work</a>
+      <a href="#path"><em>04</em> Path</a>
+      <a href="#contact"><em>05</em> Contact</a>
+    </nav>
+    <p class="mono mm-meta">frontend developer &middot; react &middot; typescript</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero shell">
+    <div class="hero-meta">
+      <span class="pill"><i class="pulse"></i> Available for work</span>
+      <span class="mono dim">REPLACE &middot; your city, India</span>
+    </div>
+
+    <h1 class="display">
+      <span class="ln">Hi, I'm</span>
+      <span class="ln">
+        <span class="name" data-tilt>Diwakar</span><span class="accent-star">&ast;</span>
+      </span>
+      <span class="ln">a <em>frontend developer</em></span>
+    </h1>
+
+    <p class="lede">
+      I turn designs into <strong>fast, accessible interfaces</strong> that feel good to use.
+      React, TypeScript and modern CSS &mdash; with an obsession for the last 10% of polish.
+    </p>
+
+    <div class="rotator" aria-live="polite">
+      <span class="mono dim">I&nbsp;build</span>
+      <span class="rot-text" id="rot">&nbsp;</span>
+    </div>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary magnet" href="#work">See my work<span class="ar">&rarr;</span></a>
+      <a class="btn btn-line magnet" href="#contact">Get in touch</a>
+    </div>
+
+    <div class="scroll-cue mono dim" aria-hidden="true">scroll<span class="cue-line"></span></div>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="ticker">
+      <div class="tk-group">
+        <span>React</span><span class="tk-dot">&bull;</span>
+        <span>TypeScript</span><span class="tk-dot">&bull;</span>
+        <span>Next.js</span><span class="tk-dot">&bull;</span>
+        <span>Design Systems</span><span class="tk-dot">&bull;</span>
+        <span>Accessibility</span><span class="tk-dot">&bull;</span>
+        <span>Performance</span><span class="tk-dot">&bull;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="sec" id="about">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-num mono">01</span>
+        <h2>About <em>me</em></h2>
+        <span class="sec-rule"></span>
+      </div>
+
+      <div class="about">
+        <div class="about-copy reveal">
+          <p class="big">
+            I'm a frontend developer who cares about <em>how things feel</em> as much as how they work.
+          </p>
+          <p>
+            Most of my time goes into component architecture, design systems and the unglamorous
+            performance work &mdash; bundle budgets, layout shift, keyboard navigation. I'd rather ship
+            one thing properly than five things halfway.
+          </p>
+          <p>
+            I work mostly in <b>React</b> and <b>TypeScript</b>, style with modern CSS (and Tailwind when
+            a team needs it), and treat accessibility and Lighthouse scores as features &mdash; not cleanups
+            for later. Right now I'm open to freelance work and full-time roles.
+          </p>
+          <ul class="facts">
+            <li><span class="k">Focus</span><span class="v">Product UI, design systems</span></li>
+            <li><span class="k">Stack</span><span class="v">React &middot; TypeScript &middot; Next.js</span></li>
+            <li><span class="k">Status</span><span class="v">Open to opportunities</span></li>
+          </ul>
+        </div>
+
+        <div class="stats reveal" data-d="1">
+          <div class="stat">
+            <div class="stat-num"><span class="count" data-num="3">0</span><span class="stat-suf">+</span></div>
+            <div class="stat-lbl">Years building<br>for the web</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span class="count" data-num="24">0</span><span class="stat-suf">+</span></div>
+            <div class="stat-lbl">Projects<br>shipped</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span class="count" data-num="98">0</span><span class="stat-suf">%</span></div>
+            <div class="stat-lbl">Avg Lighthouse<br>performance</div>
+          </div>
+          <div class="stat stat-alt">
+            <div class="stat-num"><span class="stat-suf suf-bolt">&#9889;</span></div>
+            <div class="stat-lbl">Cups of chai<br>per deploy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STACK ============ -->
+  <section class="sec sec-dark" id="stack">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-num mono">02</span>
+        <h2>My <em>stack</em></h2>
+        <span class="sec-rule"></span>
+      </div>
+
+      <div class="bento">
+        <article class="bento-card b-lg reveal">
+          <div class="bc-top">
+            <span class="bc-ic">&lt;/&gt;</span>
+            <span class="mono dim">core</span>
+          </div>
+          <h3>Languages &amp; Frameworks</h3>
+          <p>Typed, component-first. I like boring architecture that survives a rewrite.</p>
+          <ul class="skills">
+            <li>React</li><li>TypeScript</li><li>Next.js</li><li>JavaScript (ES2023)</li>
+            <li>HTML5</li><li>CSS3</li><li>Redux Toolkit</li><li>React Router</li>
+          </ul>
+        </article>
+
+        <article class="bento-card reveal" data-d="1">
+          <div class="bc-top">
+            <span class="bc-ic">&#10022;</span>
+            <span class="mono dim">style</span>
+          </div>
+          <h3>Styling &amp; Motion</h3>
+          <p>Layout first, then the flourish. Animations that respect <code>prefers-reduced-motion</code>.</p>
+          <ul class="skills">
+            <li>Modern CSS</li><li>Tailwind</li><li>Sass</li><li>Framer Motion</li><li>GSAP</li>
+          </ul>
+        </article>
+
+        <article class="bento-card reveal" data-d="2">
+          <div class="bc-top">
+            <span class="bc-ic">&#9633;</span>
+            <span class="mono dim">craft</span>
+          </div>
+          <h3>Design &amp; UX</h3>
+          <p>Pixel-accurate handoff, real design tokens, keyboard-first interaction patterns.</p>
+          <ul class="skills">
+            <li>Figma</li><li>Design Systems</li><li>Prototyping</li><li>WCAG 2.2</li>
+          </ul>
+        </article>
+
+        <article class="bento-card b-wide reveal" data-d="3">
+          <div class="bc-split">
+            <div>
+              <div class="bc-top">
+                <span class="bc-ic">&#9889;</span>
+                <span class="mono dim">performance</span>
+              </div>
+              <h3>Fast by default</h3>
+              <p>
+                Budgets set in CI, not hopes. I measure before and after every change &mdash;
+                Core Web Vitals, bundle size, interaction latency.
+              </p>
+            </div>
+            <ul class="skills skills-tight">
+              <li>Code splitting</li><li>Lazy loading</li><li>Image optimisation</li>
+              <li>Caching</li><li>Bundle analysis</li><li>Core Web Vitals</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="bento-card reveal" data-d="4">
+          <div class="bc-top">
+            <span class="bc-ic">&#9881;</span>
+            <span class="mono dim">tooling</span>
+          </div>
+          <h3>Workflow</h3>
+          <p>Small commits, clear PRs, tests where they earn their keep.</p>
+          <ul class="skills">
+            <li>Git</li><li>GitHub Actions</li><li>Vite</li><li>Vitest</li><li>Playwright</li><li>Figma</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="sec" id="work">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-num mono">03</span>
+        <h2>Selected <em>work</em></h2>
+        <span class="sec-rule"></span>
+      </div>
+
+      <p class="sec-note mono dim reveal">SAMPLE PROJECTS &mdash; replace with your real projects</p>
+
+      <div class="work-grid">
+        <article class="work reveal" data-tilt>
+          <div class="work-thumb thumb-1"><span class="thumb-tag">Dashboard</span></div>
+          <div class="work-body">
+            <span class="mono dim">2025</span>
+            <h3>Pulse Analytics</h3>
+            <p>
+              A real-time analytics dashboard: virtualised charts, streaming updates over
+              WebSockets, and a themable chart library built on canvas.
+            </p>
+            <ul class="chips"><li>React</li><li>TypeScript</li><li>D3</li><li>WebSockets</li></ul>
+            <div class="work-links">
+              <a href="#" aria-disabled="true">Live site</a>
+              <a href="#" aria-disabled="true">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work reveal" data-d="1" data-tilt>
+          <div class="work-thumb thumb-2"><span class="thumb-tag">E-commerce</span></div>
+          <div class="work-body">
+            <span class="mono dim">2025</span>
+            <h3>Northwind Storefront</h3>
+            <p>
+              Headless storefront with optimistic cart updates, image-driven product galleries
+              and a checkout that survives flaky networks.
+            </p>
+            <ul class="chips"><li>Next.js</li><li>Tailwind</li><li>Zustand</li><li>Stripe</li></ul>
+            <div class="work-links">
+              <a href="#" aria-disabled="true">Live site</a>
+              <a href="#" aria-disabled="true">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work reveal" data-d="2" data-tilt>
+          <div class="work-thumb thumb-3"><span class="thumb-tag">Open source</span></div>
+          <div class="work-body">
+            <span class="mono dim">2024</span>
+            <h3>Quill UI</h3>
+            <p>
+              An accessible React component library &mdash; 30+ components, full keyboard support,
+              themable with CSS custom properties. 1.2k stars.
+            </p>
+            <ul class="chips"><li>React</li><li>Radix</li><li>Rollup</li><li>Storybook</li></ul>
+            <div class="work-links">
+              <a href="#" aria-disabled="true">Docs</a>
+              <a href="#" aria-disabled="true">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work reveal" data-d="3" data-tilt>
+          <div class="work-thumb thumb-4"><span class="thumb-tag">This site</span></div>
+          <div class="work-body">
+            <span class="mono dim">2026</span>
+            <h3>Portfolio v3</h3>
+            <p>
+              This site. Zero dependencies, zero build step &mdash; hand-written HTML, CSS and
+              vanilla JS, under 100&nbsp;KB.
+            </p>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>Vanilla JS</li></ul>
+            <div class="work-links">
+              <a href="#" aria-disabled="true">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PATH ============ -->
+  <section class="sec sec-line" id="path">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-num mono">04</span>
+        <h2>The <em>path</em></h2>
+        <span class="sec-rule"></span>
+      </div>
+
+      <ol class="path">
+        <li class="path-item reveal">
+          <div class="path-when mono">Now</div>
+          <div class="path-body">
+            <h3>Frontend Developer <span class="path-tag">Freelance / Product</span></h3>
+            <p>
+              Building interfaces end to end for product teams &mdash; component libraries, marketing
+              sites and the design-system work that keeps everyone shipping.
+            </p>
+          </div>
+        </li>
+        <li class="path-item reveal" data-d="1">
+          <div class="path-when mono">2024 &ndash; 2026</div>
+          <div class="path-body">
+            <h3>Full-time Frontend Engineer</h3>
+            <p>
+              Owned the web app: React + TypeScript migration, a 40-component design system, and
+              a Lighthouse score we stopped apologising for.
+            </p>
+          </div>
+        </li>
+        <li class="path-item reveal" data-d="2">
+          <div class="path-when mono">2023 &ndash; 2024</div>
+          <div class="path-body">
+            <h3>Junior Developer</h3>
+            <p>
+              Learned to ship. Built CRUD screens, fixed cross-browser bugs, and discovered that
+              CSS is a real language with real opinions.
+            </p>
+          </div>
+        </li>
+        <li class="path-item reveal" data-d="3">
+          <div class="path-when mono">The start</div>
+          <div class="path-body">
+            <h3>First line of code</h3>
+            <p>
+              A broken <code>&lt;div&gt;</code> on a free tutorial page, and the realisation that
+              I wanted to fix pages for a living.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="sec contact" id="contact">
+    <div class="shell">
+      <div class="contact-box reveal">
+        <p class="mono dim">05 &mdash; Contact</p>
+        <h2>Got a project<br>in mind?</h2>
+        <p class="contact-sub">
+          I'm currently taking on freelance projects and open to frontend roles.
+          Drop me a line and tell me what you're building.
+        </p>
+
+        <div class="contact-actions">
+          <!-- REPLACE: real email address -->
+          <a class="btn btn-primary magnet" id="copyMail" href="mailto:hello@diwakar.dev">
+            hello@diwakar.dev<span class="ar">&darr;</span>
+          </a>
+          <span class="copy-hint mono" id="copyHint" role="status" aria-live="polite">click to copy</span>
+        </div>
+
+        <ul class="socials">
+          <!-- REPLACE: real profile URLs -->
+          <li>
+            <a href="https://github.com/diwakar" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.3-5.23-1.27-5.23-5.66 0-1.25.45-2.27 1.18-3.07-.12-.3-.51-1.5.11-3.12 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.62.23 2.82.12 3.12.73.8 1.17 1.82 1.17 3.07 0 4.4-2.68 5.36-5.23 5.64.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/diwakar" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/diwakar_dev" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.4Z"/></svg>
+              <span>X / Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot-in">
+    <p class="mono">&copy; <span id="yr">2026</span> Diwakar &middot; Built from scratch, no frameworks.</p>
+    <a class="to-top mono" href="#top">Back to top &uarr;</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
