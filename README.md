@@ -52,9 +52,12 @@ Notes:
 
 ```
 diwakar/
-├── index.html    # single page, all sections
-├── style.css     # design tokens → components → responsive
-├── script.js     # ~330 lines of vanilla JS
+├── .github/
+│   └── workflows/
+│       └── pages.yml     # auto-deploy to GitHub Pages
+├── index.html            # single page, all sections
+├── style.css             # design tokens → components → responsive
+├── script.js             # ~300 lines of vanilla JS
 └── README.md
 ```
 
@@ -75,6 +78,7 @@ diwakar/
 - Scroll progress bar
 - `prefers-reduced-motion` respected throughout
 - Keyboard accessible, skip link, visible focus rings
+- Auto-deploys to GitHub Pages on every push
 - Print stylesheet included
 
 ## Design system
@@ -93,7 +97,11 @@ Type: `Instrument Serif` (display) · `Space Grotesk` (body) · `JetBrains Mono`
 
 ## Deploy to GitHub Pages
 
-Settings → Pages → Source: **Deploy from a branch** → `main` / `/ (root)`.
+Deploys automatically from `main` via `.github/workflows/pages.yml`
+(GitHub Actions → Pages source: **GitHub Actions**). Every push to `main`
+rebuilds and republishes.
+
+Manual redeploy: **Actions → Deploy to GitHub Pages → Run workflow**.
 
 ## Licence
 
